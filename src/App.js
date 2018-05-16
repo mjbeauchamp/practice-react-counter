@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Counter from './counter';
 import './App.css';
 
 class App extends Component {
@@ -9,9 +10,10 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Counter</h1>
         </header>
-        <p className="App-intro">
+        {/* <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        </p> */}
+        <Counter />
       </div>
     );
   }
