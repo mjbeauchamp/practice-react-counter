@@ -6,9 +6,9 @@ class Counter extends Component{
         //Create state object
         this.state = {num: 0}
         //Make "this" in increase() point to the right place
-        // this.increase = this.increase.bind(this);
+        this.increase = this.increase.bind(this);
         //Make "this" in decrease() point to the right place
-        // this.decrease = this.decrease.bind(this);
+        this.decrease = this.decrease.bind(this);
     }
     increase(){
         // alert("You increased");
@@ -28,8 +28,8 @@ class Counter extends Component{
         return (
             <div>
                 <h2>{this.state.num}</h2>
-                <button onClick={this.increase.bind(this)}>Increase</button>
-                <button onClick={this.decrease.bind(this)}>Decrease</button>
+                <button onClick={this.increase}>Increase</button>
+                <button onClick={this.decrease}>Decrease</button>
             </div>
         );
     }
